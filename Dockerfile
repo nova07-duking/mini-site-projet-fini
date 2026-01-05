@@ -10,7 +10,7 @@ ENV LC_ALL=C.UTF-8
 COPY . .
 
 # Build du JAR en forçant l'encodage UTF-8 pour Maven
-RUN mvn clean package -DskipTests -Dfile.encoding=UTF-8
+RUN mvn clean package -DskipTests -Dmaven.resources.skip=false
 
 # Etape 2 : Execution avec JRE leger
 FROM eclipse-temurin:17-jre
