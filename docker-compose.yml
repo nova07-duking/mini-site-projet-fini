@@ -36,7 +36,7 @@ services:
       - db
       - smtp4dev
     ports:
-      - "8080:8080"
+      - "8082:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/minisite
       SPRING_DATASOURCE_USERNAME: user
