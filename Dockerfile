@@ -1,4 +1,4 @@
-# Étape 1 : Build avec Maven (Utilisation de Java 17 pour correspondre a ton projet)
+# Etape 1 : Build avec Maven (Utilisation de Java 17 pour correspondre a ton projet)
 FROM maven:3.8.4-openjdk-17 AS build
 WORKDIR /app
 
@@ -12,7 +12,7 @@ COPY . .
 # Build du JAR en forçant l'encodage UTF-8 pour Maven
 RUN mvn clean package -DskipTests -Dfile.encoding=UTF-8
 
-# Étape 2 : Execution avec JRE leger
+# Etape 2 : Execution avec JRE leger
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 

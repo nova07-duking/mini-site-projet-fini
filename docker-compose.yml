@@ -30,7 +30,7 @@ services:
 
   backend:
     container_name: minisite-api
-    build: . # 👉 la racine du projet, où se trouve ton Dockerfile
+    build: . # 👉 la racine du projet, ou se trouve ton Dockerfile
     restart: always
     depends_on:
       - db
