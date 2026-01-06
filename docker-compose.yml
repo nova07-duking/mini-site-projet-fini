@@ -43,7 +43,7 @@ services:
       SPRING_DATASOURCE_PASSWORD: password
       SPRING_MAIL_HOST: smtp4dev
       SPRING_MAIL_PORT: 25
-      JWT_SECRET: change-me-very-long-secret
+      JWT_SECRET: "MaCleUltraSecreteEtTresLongue1234567890ABCDEF"
       JWT_EXPIRATION_MS: 3600000
       SPRING_PROFILES_ACTIVE: docker
     volumes:
