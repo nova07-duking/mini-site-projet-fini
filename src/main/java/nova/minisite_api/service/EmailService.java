@@ -13,10 +13,10 @@ public class EmailService {
 
     public void envoyerEmailOtp(String to, String code) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("raphsadibi@gmail.com");
+        message.setFrom("NOVAX.com");
         message.setTo(to);
         message.setSubject("Activation de votre compte - Code OTP");
-        message.setText("Bonjour,\n\nVotre code de vérification est : " + code +
+        message.setText("Bonjour,\n\nVotre code de v�rification est : " + code +
                 "\n\nIl expirera dans 5 minutes.");
 
         mailSender.send(message);
